@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | UMBC Information Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f5f5f5; color: #222; }
+    a { color: #bf8b00; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .umbc-bar {
+      background: #000;
+      color: #fff;
+      padding: 8px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+    .logo { color: #ffcc00; font-weight: bold; font-size: 20px; }
+
+    header {
+      background: #ffcc00;
+      padding: 16px 5% 8px 5%;
+      border-bottom: 4px solid #000;
+    }
+    header h1 { margin: 0; font-size: 24px; }
+    nav {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    nav a { color: #000; padding-bottom: 4px; border-bottom: 3px solid transparent; }
+    nav a.active, nav a:hover { border-bottom-color: #000; }
+
+    .page-wrapper {
+      padding: 24px 5%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section {
+      background: #fff;
+      padding: 18px;
+      border: 1px solid #e0e0e0;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 22px;
+      margin-top: 0;
+      border-bottom: 2px solid #ffcc00;
+      padding-bottom: 6px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #cccccc;
+      border-radius: 2px;
+      font-family: inherit;
+      font-size: 14px;
+    }
+    .btn {
+      margin-top: 12px;
+      padding: 8px 16px;
+      background: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .btn:hover { opacity: 0.9; }
+
+    footer {
+      margin-top: 40px;
+      background: #000;
+      color: #fff;
+      padding: 16px 5%;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="umbc-bar">
+    <div class="logo">UMBC</div>
+    <div>myUMBC | Library | Directory</div>
+  </div>
+
+  <header>
+    <h1>Department of Information Systems</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="undergraduate.html">Undergraduate</a>
+      <a href="#">Graduate Programs</a>
+      <a href="#">People</a>
+      <a href="#">Research</a>
+      <a href="contact.html" class="active">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="page-wrapper">
+    <div class="section">
+      <h2>Contact the Department of Information Systems</h2>
+      <p>
+        We welcome questions from prospective and current students, alumni, employers,
+        and community partners. Reach out using the information below or submit the form
+        and a staff member will respond.
+      </p>
+    </div>
+
+    <div class="section grid">
+      <div>
+        <h3>Department Office</h3>
+        <p>
+          UMBC Department of Information Systems<br>
+          ITE Building, Suite 404<br>
+          1000 Hilltop Circle<br>
+          Baltimore, MD 21250
+        </p>
+        <p>
+          Phone: (000) 000 0000<br>
+          Email: isdepartment@umbc.edu
+        </p>
+
+        <h3>Key Contacts</h3>
+        <ul>
+          <li>Undergraduate Advising</li>
+          <li>Graduate Program Inquiries</li>
+          <li>Internship and Employer Relations</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Send a Message</h3>
+        <form>
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your full name">
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com">
+
+          <label for="topic">Topic</label>
+          <input id="topic" type="text" placeholder="Undergraduate, Graduate, General question">
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Type your question here"></textarea>
+
+          <button type="submit" class="btn">Submit (demo only)</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Find Us on Campus</h3>
+      <p>
+        The Information Systems Department is located in the ITE Building on the main UMBC campus.
+        Visitors can park in designated visitor lots and follow campus signage to ITE.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    © UMBC Department of Information Systems. Contact page is a student prototype.
+  </footer>
+</body>
+</html>
