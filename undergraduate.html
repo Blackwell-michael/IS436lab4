@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Undergraduate Programs | UMBC Information Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f5f5f5; color: #222; }
+    a { color: #bf8b00; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .umbc-bar {
+      background: #000;
+      color: #fff;
+      padding: 8px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+    .logo { color: #ffcc00; font-weight: bold; font-size: 20px; }
+
+    header {
+      background: #ffcc00;
+      padding: 16px 5% 8px 5%;
+      border-bottom: 4px solid #000;
+    }
+    header h1 { margin: 0; font-size: 24px; }
+    nav {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    nav a { color: #000; padding-bottom: 4px; border-bottom: 3px solid transparent; }
+    nav a.active, nav a:hover { border-bottom-color: #000; }
+
+    .page-wrapper {
+      padding: 24px 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 22px;
+      margin-top: 0;
+      border-bottom: 2px solid #ffcc00;
+      padding-bottom: 6px;
+    }
+    .section {
+      background: #fff;
+      padding: 18px;
+      border: 1px solid #e0e0e0;
+      margin-bottom: 20px;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .highlight {
+      background: #fff7d1;
+      padding: 12px;
+      border-left: 4px solid #ffcc00;
+      font-size: 14px;
+    }
+    .btn {
+      display: inline-block;
+      background: #ffcc00;
+      color: #000;
+      padding: 8px 16px;
+      font-weight: bold;
+      margin-top: 10px;
+      border-radius: 2px;
+    }
+    footer {
+      margin-top: 40px;
+      background: #000;
+      color: #fff;
+      padding: 16px 5%;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="umbc-bar">
+    <div class="logo">UMBC</div>
+    <div>myUMBC | Library | Directory</div>
+  </div>
+
+  <header>
+    <h1>Department of Information Systems</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="undergraduate.html" class="active">Undergraduate</a>
+      <a href="#">Graduate Programs</a>
+      <a href="#">People</a>
+      <a href="#">Research</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="page-wrapper">
+    <div class="section">
+      <h2>Undergraduate Programs in Information Systems</h2>
+      <p>
+        UMBC offers a Bachelor of Science in Information Systems that combines computing,
+        business processes, and human centered design. Students learn programming, systems
+        analysis, databases, networking, analytics, and project management while developing
+        communication and teamwork skills valued by employers.
+      </p>
+    </div>
+
+    <div class="section two-col">
+      <div>
+        <h3>Program Highlights</h3>
+        <ul>
+          <li>Strong foundation in technical and analytical skills.</li>
+          <li>Emphasis on real projects with regional organizations.</li>
+          <li>Opportunities for internships, research, and honors.</li>
+          <li>Supportive advising and tutoring resources.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Admission and Advising</h3>
+        <p>
+          Students may enter as Information Systems majors or transition after meeting
+          prerequisite requirements. Academic advisors assist with course planning, transfer
+          credit review, and graduation preparation.
+        </p>
+        <a class="btn" href="#">Schedule Advising Appointment</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Sample Curriculum Snapshot</h3>
+      <p>
+        A typical plan includes foundational math and computing, core Information Systems
+        courses, and electives in areas such as cybersecurity, health IT, data science,
+        and user experience design.
+      </p>
+    </div>
+
+    <div class="section highlight">
+      Ready to take the next step
+      <br>
+      <a class="btn" href="#">Apply to UMBC</a>
+      <a class="btn" href="#">Visit Campus</a>
+    </div>
+  </div>
+
+  <footer>
+    © UMBC Department of Information Systems. Undergraduate information is for prototyping only.
+  </footer>
+</body>
+</html>
